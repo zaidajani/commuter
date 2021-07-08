@@ -10,14 +10,14 @@ if (require("electron-squirrel-startup")) {
 const createWindow = () => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    titleBarStyle: "hidden",
-    width: 1281,
-    height: 800,
+    // titleBarStyle: "hidden",
+    width: 500,
+    height: 600,
     minWidth: 1281,
     minHeight: 800,
     backgroundColor: "#FFFFFF",
   });
-  mainWindow.setMenuBarVisibility(false);
+  // mainWindow.setMenuBarVisibility(false);
 
   // and load the index.html of the app.
   mainWindow.loadFile(path.join(__dirname, "index.html"));
